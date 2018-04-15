@@ -1,3 +1,13 @@
+import tkinter as tk
+import tkinter.filedialog
+from tkinter import messagebox
+import stix2
+import urllib
+from urllib.parse import *
+from urllib.request import *
+from urllib.response import *
+
+
 def bugreport(parent, msg):
     try:
         message = urllib.parse.quote_plus(msg)
